@@ -1,0 +1,84 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: linear-gradient(to bottom, gray, white);
+    text-align: center;
+}
+
+.layout{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 1fr;
+}
+
+.layout, nav, main{
+    border: 1px solid;
+}
+
+.navbar{
+    height: 100%;
+}
+
+.active{
+    color: green !important;
+    font-weight: bold;
+    font-family: 'Lucida handwriting';
+}
+
+.my-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+ul{
+    text-align: left;
+}
+
+.fancy-form{
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.fancy-form input, .fancy-form select{
+    margin-bottom: 20px;
+}
+
+ul.errorlist{
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    transform: translate(300px);
+}
+
+.auth{
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.messages {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.messages > .success{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+
+.messages > .error{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}

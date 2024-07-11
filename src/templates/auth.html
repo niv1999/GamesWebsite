@@ -1,0 +1,21 @@
+<div>
+
+    <!-- If user logged-in: -->
+    {% if user.is_authenticated %}
+
+        <span>Hello {{user.first_name}} {{user.last_name}} | </span>
+
+        <a href="{% url 'logout' %}">Logout</a>
+
+        <!-- User is not logged in -->
+    {% else %}
+
+        <span>Hello Guest | </span>
+
+        <a href="{% url 'login' %}" class="{% if active == 'login' %}active{% endif %}">Login</a>
+
+        <a href="{% url 'register' %}" class="{% if active == 'register' %}active{% endif %}">Register</a>
+
+    {% endif %}
+
+</div>

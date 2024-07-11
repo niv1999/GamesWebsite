@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+Gaming | Weather
+{% endblock title %}
+
+{% block content %}
+
+<div class="card w-25 mx-auto m-5">
+    <h2>Weather in Israel</h2>
+    <h4>Temperature: {{temperature}}</h4>
+    <h4>Description: {{description}}</h4>
+</div>
+
+{% endblock content %}

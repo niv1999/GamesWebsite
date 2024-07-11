@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+Gaming | {{product.name}}
+{% endblock title %}
+
+{% block content %}
+<h3>Product Details:</h3>
+
+<div class="my-card">
+    <div class="card w-25">
+        <h4>Name: {{product.name}}</h4>
+        <h4>Price: {{product.price}}</h4>
+        <h4>Stock: {{product.stock}}</h4>
+        <h4>Category: {{product.category.name}}</h4>
+        <h4>Release Date: {{product.release_date}}</h4>
+    </div>
+</div>
+{% endblock content %}
